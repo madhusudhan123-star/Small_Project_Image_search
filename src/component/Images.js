@@ -45,7 +45,7 @@ if (isLoading) {
   if (error) {
     return <div>Error: {error}</div>;
   }
-
+  console.log(images);
   return (
     <div className='flex flex-col justify-center items-center gap-20'>
       <h1 className='text-3xl mb-10'>Image Gallery</h1>
