@@ -19,18 +19,20 @@ const Search = ({ setSearch }) => {
   };
 
   return (
-    <div className="border border-black border-2">
-      <input
-        type="text"
-        placeholder="Search..."
-        className="w-96 p-2 outline-none"
-        value={inputValue}
-        onChange={handleInputChange}
-        onKeyDown={handleKeyDown}
-      />
+    <div style={{width: "100vw"}} className="flex justify-center">
+      <div className='border border-black border-2 flex lg:w-2/5 md:w-3/5 sm:w-full '>
+        <input
+          type="text"
+          placeholder="Search..."
+          className="w-full p-2 outline-none"
+          value={inputValue}
+          onChange={handleInputChange}
+          onKeyDown={handleKeyDown}
+        />
       <button className="ml-2 px-4 py-2 bg-blue-500 text-white" onClick={handleSearch}>
         Search
       </button>
+      </div>
     </div>
   );
 };
